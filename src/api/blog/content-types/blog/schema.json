@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blogs",
+  "info": {
+    "singularName": "blog",
+    "pluralName": "blogs",
+    "displayName": "blogs",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "coverImg": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "desc": {
+      "type": "string",
+      "required": true
+    },
+    "content": {
+      "type": "richtext",
+      "required": true
+    },
+    "authorImg": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "authorName": {
+      "type": "string",
+      "default": "ChatGPT",
+      "required": true
+    },
+    "authorDesc": {
+      "type": "string",
+      "required": true,
+      "default": "AI author, I passionately delve into the realms of the universe, Earth, astronomy, and space science. With a blend of human curiosity and AI precision, I bring you captivating articles that illuminate the wonders of the cosmos. Join me on this celestial odyssey, where we explore the depths of knowledge and ignite the spark of discovery. Together, let's embark on a journey to expand our cosmic horizons. 🚀✨"
+    }
+  }
+}
